@@ -5,13 +5,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div>
+        <div style={{ width: "100%" }}>
           <img
             className="img-header"
             src={require("./img/michael.JPG")}
-            width={400}
-            height={400}
-            alt="Picture of Michael"
+            alt="Michael Moore"
           />
         </div>
         <div className="header-welcome">
@@ -49,20 +47,24 @@ function App() {
             src={require("./img/calculate2.jpg")}
             width={200}
             style={{ paddingBottom: 10 }}
+            alt="log in screen"
           />
           <img
             src={require("./img/calculate3.jpg")}
             width={200}
             style={{ paddingBottom: 10 }}
+            alt="where you calculate your commissions"
           />
           <img
             src={require("./img/calculate1.jpg")}
             width={200}
             style={{ paddingBottom: 10 }}
+            alt="A screen showing your calculations"
           />
           <img
             src={require("./img/Screenshot_20191206-020718_Expo.jpg")}
             width={200}
+            alt="A report page showing your earnings in graph format"
           />
         </div>
         <p className="description" style={{ textAlign: "left" }}>
@@ -75,7 +77,10 @@ function App() {
         <p className="description" style={{ fontWeight: "bold" }}>
           USE EXPO AND SCAN BARCODE
         </p>
-        <img src={require("./img/calc-scan.png")} />
+        <img
+          src={require("./img/calc-scan.png")}
+          alt="A barcode to scan with expo app"
+        />
       </article>
 
       <article className="project-one">
@@ -85,16 +90,19 @@ function App() {
             src={require("./img/movie3.jpg")}
             width={200}
             style={{ paddingBottom: 10 }}
+            alt="main screen of movie app"
           />
           <img
             src={require("./img/movie2.jpg")}
             width={200}
             style={{ paddingBottom: 10 }}
+            alt="A more detail screen of a selected movie"
           />
           <img
             src={require("./img/movie1.jpg")}
             width={200}
             style={{ paddingBottom: 10 }}
+            alt="display of search functionality in the app"
           />
         </div>
         <p className="description" style={{ textAlign: "left" }}>
@@ -106,7 +114,10 @@ function App() {
         <p className="description" style={{ fontWeight: "bold" }}>
           USE EXPO AND SCAN BARCODE
         </p>
-        <img src={require("./img/movie-scan.png")} />
+        <img
+          src={require("./img/movie-scan.png")}
+          alt="A barcode to scan with expo app"
+        />
       </article>
 
       <article className="project-one">
@@ -116,16 +127,19 @@ function App() {
             src={require("./img/survey1 (2).png")}
             width={600}
             style={{ paddingBottom: 10 }}
+            alt="screen shot of survey website"
           />
           <img
             src={require("./img/survey2 (2).png")}
             width={600}
             style={{ paddingBottom: 10 }}
+            alt="end of survey displaying data in graph format"
           />
           <img
             src={require("./img/survey3 (2).png")}
             width={600}
             style={{ paddingBottom: 10 }}
+            alt="survey displaying data in graph format"
           />
         </div>
         <p className="description">
