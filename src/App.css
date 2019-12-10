@@ -3,12 +3,6 @@
   font-family: courier, arial, helvetica;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #013220;
   min-height: 100vh;
@@ -48,4 +42,17 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+@media screen and (max-width: 750px) {
+  .App-header {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .header-welcome {
+    text-align: center;
+  }
+  .description {
+    font-size: 20px;
+  }
 }
