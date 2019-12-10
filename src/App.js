@@ -16,6 +16,23 @@ function App() {
         </div>
         <div className="header-welcome">
           <h1>Michael Moore</h1>
+          <div className="contacts">
+            <a href="https://www.linkedin.com/in/michael-moore-developer/">
+              <button className="button-header-style" type="button">
+                Linked-In
+              </button>
+            </a>
+            <a href="https://github.com/24HourDeveloper">
+              <button className="button-header-style" type="button">
+                Github
+              </button>
+            </a>
+            <a href="https://twitter.com/UNCODED_LS">
+              <button className="button-header-style" type="button">
+                Twitter
+              </button>
+            </a>
+          </div>
           <p>
             I'm a developer and welcome to my portfolio. I build frontend sites
             using Reactjs and mobile apps with React Native. I also have backend
