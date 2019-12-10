@@ -38,8 +38,9 @@
   margin-left: 20px;
 }
 .project-one {
-  background-color: gray;
+  background-color: #d3d3d3;
   padding: 10px;
+  border-bottom: 1px solid #000;
 }
 
 .project-row {

@@ -26,7 +26,7 @@ function App() {
       </header>
 
       <article className="project-one">
-        <h1>My Project 1</h1>
+        <h1 style={{ fontSize: 35 }}>Project 1</h1>
         <div className="project-row">
           <img src={require("./img/calculate2.jpg")} width={200} />
           <img src={require("./img/calculate3.jpg")} width={200} />
@@ -48,7 +48,7 @@ function App() {
       </article>
 
       <article className="project-one">
-        <h1>My Project 2</h1>
+        <h1 style={{ fontSize: 35 }}>Project 2</h1>
         <div className="project-row">
           <img src={require("./img/movie3.jpg")} width={200} />
           <img src={require("./img/movie2.jpg")} width={200} />
@@ -65,7 +65,7 @@ function App() {
       </article>
 
       <article className="project-one">
-        <h1>My Project 3</h1>
+        <h1 style={{ fontSize: 35 }}>Project 3</h1>
         <div className="project-row">
           <img
             src={require("./img/survey1 (2).png")}
@@ -84,7 +84,12 @@ function App() {
           />
         </div>
         <p>
-          <a href="https://stoic-panini-dd5afc.netlify.com">Link To Website</a>
+          <a
+            href="https://stoic-panini-dd5afc.netlify.com"
+            style={{ fontWeight: "bold" }}
+          >
+            Link To Website
+          </a>
         </p>
         <p style={{ textAlign: "left" }}>
           This React site is a simple survey. The answers are being stored in
