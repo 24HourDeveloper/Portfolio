@@ -1,4 +1,11 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faTwitter,
+  faLinkedin,
+  faGithub
+} from "@fortawesome/free-brands-svg-icons";
+
 import "./App.css";
 
 function App() {
@@ -41,7 +48,7 @@ function App() {
       </header>
 
       <article className="project-one">
-        <h1 style={{ fontSize: 35 }}>Project 1</h1>
+        <h1 style={{ fontSize: 35, paddingBottom: 10 }}>Project 1</h1>
         <div className="project-row">
           <img
             src={require("./img/calculate2.jpg")}
@@ -67,14 +74,20 @@ function App() {
             alt="A report page showing your earnings in graph format"
           />
         </div>
-        <p className="description" style={{ textAlign: "left" }}>
+        <p
+          className="description"
+          style={{ textAlign: "left", paddingBottom: 10 }}
+        >
           I made this app to help calculate my commission at work. Users can
           sign up and create an account or log in with an existing one. User
           authentication is being handled through firebase. You store your work
           load and the app will calculate your commissions for that day. Your
           data is also displayed in graph form with a library called chartjs.
         </p>
-        <p className="description" style={{ fontWeight: "bold" }}>
+        <p
+          className="description"
+          style={{ fontWeight: "bold", paddingBottom: 10 }}
+        >
           USE EXPO AND SCAN BARCODE
         </p>
         <img
@@ -84,7 +97,7 @@ function App() {
       </article>
 
       <article className="project-one">
-        <h1 style={{ fontSize: 35 }}>Project 2</h1>
+        <h1 style={{ fontSize: 35, paddingBottom: 10 }}>Project 2</h1>
         <div className="project-row">
           <img
             src={require("./img/movie3.jpg")}
@@ -105,13 +118,19 @@ function App() {
             alt="display of search functionality in the app"
           />
         </div>
-        <p className="description" style={{ textAlign: "left" }}>
+        <p
+          className="description"
+          style={{ textAlign: "left", paddingBottom: 10 }}
+        >
           With this app I'm getting the data from a movie api. I fetch the data
           and display it within the app using flatlist horizontal. You can
           select any movie and get present with more detail about the movie and
           watch the trailer. I also added search functionality as well.
         </p>
-        <p className="description" style={{ fontWeight: "bold" }}>
+        <p
+          className="description"
+          style={{ fontWeight: "bold", paddingBottom: 10 }}
+        >
           USE EXPO AND SCAN BARCODE
         </p>
         <img
@@ -121,7 +140,7 @@ function App() {
       </article>
 
       <article className="project-one">
-        <h1 style={{ fontSize: 35 }}>Project 3</h1>
+        <h1 style={{ fontSize: 35, paddingBottom: 10 }}>Project 3</h1>
         <div className="project-row">
           <img
             src={require("./img/survey1 (2).png")}
@@ -142,7 +161,7 @@ function App() {
             alt="survey displaying data in graph format"
           />
         </div>
-        <p className="description">
+        <p className="description" style={{ paddingBottom: 10 }}>
           <a
             href="https://stoic-panini-dd5afc.netlify.com"
             style={{ fontWeight: "bold" }}
@@ -156,6 +175,41 @@ function App() {
           mobile friendly so you can take the survey via mobile.
         </p>
       </article>
+      <footer className="footer">
+        <p style={{ color: "#fff", paddingBottom: 10 }}>
+          Website built by: Michael Moore
+        </p>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center"
+          }}
+        >
+          <p style={{ color: "#fff", marginRight: 10 }}>Contacts:</p>
+          <a href="https://twitter.com/UNCODED_LS">
+            <FontAwesomeIcon
+              icon={faTwitter}
+              color="#fff"
+              style={{ marginRight: 10 }}
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/michael-moore-developer/">
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              color="#fff"
+              style={{ marginRight: 10 }}
+            />
+          </a>
+          <a href="https://github.com/24HourDeveloper">
+            <FontAwesomeIcon
+              icon={faGithub}
+              color="#fff"
+              style={{ marginRight: 10 }}
+            />
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }
