@@ -80,7 +80,20 @@
   padding-bottom: 20px;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1070px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .button-header-style {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 849px) {
   .App-header {
     flex-direction: column;
     justify-content: space-around;

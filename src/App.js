@@ -20,7 +20,7 @@ function App() {
           />
         </div>
         <div className="header-welcome">
-          <h1>Michael Moore</h1>
+          <h1 style={{ marginBottom: 20 }}>Michael Moore</h1>
           <div className="contacts">
             <a href="https://www.linkedin.com/in/michael-moore-developer/">
               <button className="button-header-style" type="button">
@@ -176,7 +176,7 @@ function App() {
         </p>
       </article>
       <footer className="footer">
-        <p style={{ color: "#fff", paddingBottom: 10 }}>
+        <p className="description" style={{ color: "#fff", paddingBottom: 10 }}>
           Website built by: Michael Moore
         </p>
         <div
@@ -186,26 +186,31 @@ function App() {
             justifyContent: "center"
           }}
         >
-          <p style={{ color: "#fff", marginRight: 10 }}>Contacts:</p>
+          {/* <p className="description" style={{ color: "#fff", marginRight: 10 }}>
+            Contacts:
+          </p> */}
           <a href="https://twitter.com/UNCODED_LS">
             <FontAwesomeIcon
               icon={faTwitter}
               color="#fff"
-              style={{ marginRight: 10 }}
+              style={{ marginRight: 30 }}
+              size="2x"
             />
           </a>
           <a href="https://www.linkedin.com/in/michael-moore-developer/">
             <FontAwesomeIcon
               icon={faLinkedin}
               color="#fff"
-              style={{ marginRight: 10 }}
+              style={{ marginRight: 30 }}
+              size="2x"
             />
           </a>
           <a href="https://github.com/24HourDeveloper">
             <FontAwesomeIcon
               icon={faGithub}
               color="#fff"
-              style={{ marginRight: 10 }}
+              style={{ marginRight: 30 }}
+              size="2x"
             />
           </a>
         </div>
