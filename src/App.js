@@ -10,8 +10,7 @@ import "./App.css";
 import MobileProjects from "./components/MobileProjects";
 import WebProjects from "./components/WebProjects";
 import HeaderButtons from "./components/HeaderButtons";
-import {mobileProjects, webProjects, socialLinks} from "./data.js"
-
+import { mobileProjects, webProjects, socialLinks } from "./data.js";
 
 function App() {
   return (
@@ -27,7 +26,10 @@ function App() {
         <div className="header-welcome">
           <h1 style={{ marginBottom: 20 }}>Michael Moore</h1>
           <div className="contacts">
-            <HeaderButtons links={socialLinks.links} social={socialLinks.social}/>
+            <HeaderButtons
+              links={socialLinks.links}
+              social={socialLinks.social}
+            />
           </div>
           <p>
             I'm a developer and welcome to my portfolio. I build frontend sites
@@ -38,20 +40,33 @@ function App() {
         </div>
       </header>
 
-        {mobileProjects.map((project, index) => {
-          return  <article className="project-one" key={index}>
-                    <MobileProjects title={project.title} images={project.images} 
-                    description={project.description} barTitle={project.barTitle} barcodeImg={project.barcodeImg}/>
-                  </article>
-        })}
+      {mobileProjects.map((project, index) => {
+        return (
+          <article className="project-one" key={index}>
+            <MobileProjects
+              title={project.title}
+              images={project.images}
+              description={project.description}
+              barTitle={project.barTitle}
+              barcodeImg={project.barcodeImg}
+            />
+          </article>
+        );
+      })}
 
-        {webProjects.map((project, index) => {
-          return  <article className="project-one" key={index}>
-                    <WebProjects title={project.title} images={project.images} 
-                    description={project.description} siteLink={project.siteLink}/>
-                  </article>
-        })}
-      
+      {webProjects.map((project, index) => {
+        return (
+          <article className="project-one" key={index}>
+            <WebProjects
+              title={project.title}
+              images={project.images}
+              description={project.description}
+              siteLink={project.siteLink}
+            />
+          </article>
+        );
+      })}
+
       <footer className="footer">
         <p className="description" style={{ color: "#fff", paddingBottom: 10 }}>
           Website built by: Michael Moore
@@ -63,15 +78,17 @@ function App() {
             justifyContent: "center"
           }}
         >
-          {[faLinkedin, faGithub,faTwitter].map((icon, index) => {
-            return <a href={socialLinks.links[index]} key={index}>
-            <FontAwesomeIcon
-              icon={icon}
-              color="#fff"
-              style={{ marginRight: 30 }}
-              size="2x"
-            />
-            </a>
+          {[faLinkedin, faGithub, faTwitter].map((icon, index) => {
+            return (
+              <a href={socialLinks.links[index]} key={index}>
+                <FontAwesomeIcon
+                  icon={icon}
+                  color="#fff"
+                  style={{ marginRight: 30 }}
+                  size="2x"
+                />
+              </a>
+            );
           })}
         </div>
       </footer>
