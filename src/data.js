@@ -1,7 +1,12 @@
 export const mobileProjects = [
   {
     title: "Project 1",
-    images: ["calculate2.jpg", "calculate3.jpg", "calculate1.jpg"],
+    images: [
+      "calculate2.jpg",
+      "calculate3.jpg",
+      "calculate1.jpg",
+      "calculate4.jpg"
+    ],
     description: `I made this app to help calculate my commission at work. Users can
         sign up and create an account or log in with an existing one. User
         authentication is being handled through firebase. You store your work

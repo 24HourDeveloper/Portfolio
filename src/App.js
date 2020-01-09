@@ -19,7 +19,7 @@ function App() {
         <div style={{ width: "100%" }}>
           <img
             className="img-header"
-            src={require("./img/michael.JPG")}
+            src={require("./img/michael_resized.JPG")}
             alt="Michael Moore"
           />
         </div>
