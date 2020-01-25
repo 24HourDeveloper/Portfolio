@@ -12,7 +12,7 @@
 }
 
 .App-header {
-  background-color: #013220;
+  background-color: #32527b;
   min-height: 100vh;
   display: flex;
   flex-direction: row;
@@ -91,7 +91,7 @@
   height: 400px;
 }
 .footer {
-  background-color: #013220;
+  background-color: #32527b;
   padding-top: 20px;
   padding-bottom: 20px;
 }
