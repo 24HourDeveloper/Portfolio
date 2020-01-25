@@ -18,8 +18,8 @@ export default function WebProjects({ title, images, description, siteLink }) {
           );
         })}
       </div>
-      <p className="description" style={{ paddingBottom: 10 }}>
-        <a href={siteLink} style={{ fontWeight: "bold" }}>
+      <p className="link-description" style={{ paddingBottom: 10 }}>
+        <a href={siteLink} style={{ fontWeight: "bold" }} className="alink">
           Link To Website
         </a>
       </p>

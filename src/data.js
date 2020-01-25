@@ -35,6 +35,15 @@ export const webProjects = [
         firebase and retrieved to be displayed in graphs. The site is also
         mobile friendly so you can take the survey via mobile.`,
     siteLink: "https://stoic-panini-dd5afc.netlify.com"
+  },
+  {
+    title: "Project 4",
+    images: ["birth4.png", "birth3.png", "birth1.png", "birth2.png"],
+    description: `This project takes your date of birth and shows movies that were either released during your birthday,
+    the month of your birth, and movies released that year. The backend is a Java Springboot rest api thats fetching data 
+    from a movie database and responding with movie titles based on the users birthday. The frontend I built using
+    React and Material UI components.`,
+    siteLink: "https://blissful-beaver-33cf0d.netlify.com/"
   }
 ];
 

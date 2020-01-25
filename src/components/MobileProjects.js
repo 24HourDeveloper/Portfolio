@@ -31,7 +31,7 @@ export default function MobileProjects({
         {description}
       </p>
       <p
-        className="description"
+        className="bar-description"
         style={{ fontWeight: "bold", paddingBottom: 10 }}
       >
         {barTitle}

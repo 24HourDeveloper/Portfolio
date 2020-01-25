@@ -68,7 +68,10 @@ function App() {
       })}
 
       <footer className="footer">
-        <p className="description" style={{ color: "#fff", paddingBottom: 10 }}>
+        <p
+          className="footer-description"
+          style={{ color: "#fff", paddingBottom: 10 }}
+        >
           Website built by: Michael Moore
         </p>
         <div
